@@ -13,10 +13,7 @@ export default function orderByProps(object, property) {
     if (a.key > b.key) {
       return 1;
     }
-    if (a.key < b.key) {
-      return -1;
-    }
-    return 0;
+    return -1;
   });
 
   array.forEach((elem) => {
@@ -25,4 +22,4 @@ export default function orderByProps(object, property) {
   return sortArray;
 }
 
-//orderByProps(obj, ['name', 'level']);
+// orderByProps(obj, ['name', 'level']);
